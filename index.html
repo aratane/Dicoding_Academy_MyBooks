@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>It's My Books</title>
+    <link rel="icon" type="ico/x-icon" href="img/smart.ico" />
+
+    <!--Bagian css atau style design lainnya-->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'>
+    <link rel="stylesheet" href="css/forpage/landstyle.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <section class="showcase">
+        <div class="video-container">
+            <video src="img/galaxyku.mov" autoplay muted loop></video>
+        </div>
+        <div class="content">
+            <h1>Selamat Datang</h1>
+            <h3>Hallo, Disini tersedia fitur menambahkan, menghapus, dan mencari, <br> Mohon maaf untuk fitur edit masih dalam tahap pengembangan, fitur tersebut akan muncul secepat mungkin.</h3>
+            <a href="#bagianBuku" class="btn">Bookshelf Apps</a>
+        </div>
+    </section>
+
+    <section id="bagianBuku">
+        <header class="head_bar">
+            <h1 class="head_bar__title">
+                Bookshelf Apps
+            </h1>
+        </header>
+        <section class="input_section">
+            <h2>Masukan buku baru</h2>
+            <!--Ini class untuk tampilan form input buku-->
+            <form id="inputBuku">
+                <!--class untuk inputan nama, penulis, dan tahun buku-->
+                <div class="input">
+                    <label for="inputJudulBuku">Judul</label>
+                    <input type="text" id="inputJudulBuku" required>
+                </div>
+                <div class="input">
+                    <label for="inputPemilikBuku">Penulis</label>
+                    <input type="text" id="inputPemilikBuku" required>
+                </div>
+                <div class="input">
+                    <label for="inputTahunBuku">Tahun</label>
+                    <input type="text" id="inputTahunBuku" required>
+                </div>
+                <div class="input_inline">
+                    <label for="inputBukuSelesai">Selesai Dibaca</label>
+                    <input type="checkbox" id="inputBukuSelesai">
+                </div>
+                <button id="bookSubmit" type="submit">
+                    Masukan buku ke rak <span>Belum selesai dibaca</span>
+                </button>
+            </form>
+        </section>
+        <!--Section class untuk mencari buku-->
+        <section class="search_section">
+            <h2>Cari buku</h2>
+            <form id="cariBuku">
+                <label for="cariJudulBuku">Judul</label>
+                <input type="text" id="cariJudulBuku">
+                <button id="cariBuku" type="submit">
+                    Cari
+                </button>
+            </form>
+        </section>
+
+        <!--Class Tempat buku belum beres dibaca-->
+        <section class="book_shelf">
+            <h2>Belum selesai dibaca</h2>
+            <div id="belumSelesaiDibaca" class="book_list">
+
+            </div>
+        </section>
+
+        <!--Class tempat buku sudah beres dibaca-->
+        <section class="book_shelf">
+            <h2>Selesai dibaca</h2>
+            <div id="sudahSelesaiDibaca" class="book_list">
+
+            </div>
+        </section>
+        </main>
+    </section>
+
+    <section id="about">
+        <h1>Tentang Bookshelf</h1>
+        <p>
+            Ini adalah project Dicoding Submission Belajar Membuat Front-End Web untuk Pemula, yang dikembangkan oleh <span><a href="https://www.dicoding.com/users/aratane" style="color: aqua;">@Ihsan Maulana</a></span>
+        </p>
+
+        <h2>Follow Me On Social Media</h2>
+
+        <div class="social">
+            <a href="https://twitter.com/mizarxs" target="_blank"><i class="fab fa-twitter fa-3x"></i></a>
+            <a href="https://instagram.com/neihsn" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+            <a href="https://github.com/aratane" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+            <a href="https://www.linkedin.com/in/ihsan-maulana-0681b11b1/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+        </div>
+    </section>
+
+    <footer style="text-align: center; color: black;">
+        <p>Copyright ©2022, Dibuat dengan ❤ oleh <a href="https://www.dicoding.com/users/aratane">Ihsan Maulana</a></p>
+    </footer>
+</body>
+<!--Untuk javascript-->
+<script src="js/script.js"></script>
+<script src="js/objek.js"></script>
+<script src="js/lokal.js"></script>
+
+</html>
